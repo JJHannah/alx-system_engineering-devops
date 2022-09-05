@@ -1,15 +1,15 @@
 0.
 1.
 2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11. 
+3.  
+4.  The following script displays the last 10 lines of /etc/passwd.
+5.  This script displays the first 10 lines of /etc/passwd.
+6.  The following script displays the third line of the file iacta.
+7.  This shell  script  creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
+8.  This script script that writes into the file ls-cwd-content the result of the command ls -la. If the file ls-cwd-content already exists, it should be overwritten. If the file ls-cwd-content does not exist, create it.(the symbol - should be an underscore)
+9.  The following Script duplicates the last line of the file iacta, the file iacta will be in the working directory.
+10. This script deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
+11. This script counts  the number of directories and sub-directories in the current directory under which the current and parent directories should not be taken into account also the Hidden directories should be counted.
 12. The following script displays the 10 newest files in the current directory with th following requirement:it should be One file per line and Sorted from the newest to the oldest.
 13. This script takes a list of words as input and prints only words that appear exactly once,Input and output format: One line, one word,and Words which should be sorted.
 14. The following script displays the lines containing the pattern “root” from the file /etc/passwd.
