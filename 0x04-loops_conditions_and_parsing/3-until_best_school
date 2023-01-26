@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-i=1
-
-until [ $i -gt 10 ]
+i = 0
+until (( i == 10 ))
 do
     echo "Best School"
-    ((i++))
+    (( i++ ));
 done
