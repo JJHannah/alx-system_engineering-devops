@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 # This is a regular expression that is matches a given pattern
-#puts ARGV[0].scan(/hb?tn/).join
+puts ARGV[0].scan(/hb?tn/).join
