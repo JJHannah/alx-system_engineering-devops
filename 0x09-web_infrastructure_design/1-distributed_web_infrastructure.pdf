@@ -1,0 +1,19 @@
+1. For every additional element, why you are adding
+A load balancer provides scalability whereby it provides the capability to handle most sudden spikes in traffic by spreading the traffic across multiple servers.It also offer Redundancy, Since the website traffic is sent to two or more web servers, if one server fails, the load balancer will automatically transfer the traffic to the other working web server(s).
+2. What distribution algorithm your load balancer is configured with and how it works
+Round Robin network load balancing rotates connection requests among web servers in the order that requests are received. For a simplified example, assume that an enterprise has a cluster of two servers: Server A, Server B. The first request is sent to Server A and the second request is sent to Server B.The load balancer continues passing requests to servers based on this order. This ensures that the server load is distributed evenly to handle high traffic.
+3.Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+The load balancer enables an Active-Active setup,the main purpose for this  is to achieve load balancing.The load balancer distributes workloads across all nodes in order to prevent any single node from getting overloaded.In the illustration the load balancer and two HTTP servers Instead of connecting directly to an HTTP server, web clients go through the load balancer, which in turn connects each client to any of the HTTP servers behind it.
+Active -Passive it only consists of two nodes whereby not all nodes are going to be active .In this case of two nodes, for example, if the first node is already active, the second node must be passive or on standby. Example When clients connect to a two-node cluster in active-passive configuration, they only connect to one server.Resulting to all clients connecting  to the same server.The passive (failover) server serves as a backup that's ready to take over as soon as the active (primary) server gets disconnected or is unable to serve, an active-passive failover for when a node fails.
+4. How a database Primary-Replica (Master-Slave) cluster works
+Master-Slave Database Configuration in simple words is dividing our master databases into multiple slave databases. The Slave database serves as a backup for the master database.The master database is the primary storage of the data, where all the writing operations of the data request are performed whereas the reading operation is spread across multiple slave databases relative to the master database.
+5. What is the difference between the Primary node and the Replica node in regard to the application
+A replica node is a copy of the primary node,it provides redundancy copies of the application codebase .It protects against hardware failures and increased capacity to read requests such as searching or retrieving documents.
+
+	ISSUES with this infrastructure
+A)Where are SPOF
+It has a sinngle point of failure in this infrastructure bacause of having one load balancer
+B)Security issues (no firewall, no HTTPS)
+Some of the major threats include Distributed Denial of Service (DDoS) attacks.(DDoS) attack protocol attacks—are designed to drain firewall and load balancer resources to keep them from processing legitimate traffic.While firewalls can mitigate some types of DDoS attacks, they can still be overloaded by protocol attacks.
+C)No monitoring
+Monitoring allows teams to collect operational and performance data from their systems to diagnose, fix, and improve them.

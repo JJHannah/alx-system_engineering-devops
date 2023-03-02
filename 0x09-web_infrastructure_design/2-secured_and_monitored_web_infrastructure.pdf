@@ -1,0 +1,19 @@
+1.For every additional element, why you are adding it
+There three components  added which include
+Firewall  to protect each server from malicious acttacks.In addition 1 SSL certificate which will authenticate  a website's identity enabling encrypted connection.Lastly a monitoring client to troubleshoot performance issues more efficiently and effectively
+2. What are firewalls for
+Its is a network security device that monitors incoming and outgoing network traffic and permits or blocks data packets based on a set of security rules.
+3.Why is the traffic served over HTTPS
+ to encrypt communications so that attackers can't steal data
+4. What monitoring is used for
+It provids the capability to detect and diagnose any web performance issues more efficiently and effectively
+5.Explain what to do if you want to monitor your web server QPS
+A web server handles a thousand queries per second ,you should  monitor it from the network application level.
+
+	ISSUES	with this infrastructure
+1.Why terminating SSL at the load balancer level is an issue
+This poses a threat because the data that are passing across the network from the load balancer to the App Server are now unencrypted, and that will leave applications vulnerable to Man-in-the-Middle Attack.
+2.Why having only one MySQL server capable of accepting writes is an issue
+It has a significant performance overhead because it assumes that all transactions will be committed on at least three servers. If you have massive write requests, this can cause performance degradation even for read requests.
+3.Why having servers with all the same components (database, web server and application server) might be a problem
+You lose the web server, and just the database for that specific application

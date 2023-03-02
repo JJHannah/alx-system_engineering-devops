@@ -1,0 +1,22 @@
+1 .What is a server
+A server is a computer program or device that provides a service to another computer program and its user, also known as the client.
+2. What is the role of the domain name
+The Domain name enables users to access Websites, without having to know the associated IP addresses of the websites.
+3. What type of DNS record www is in www.foobar.com
+www is a CNAME(Canonical Name) DNS record-type  of DNS record that maps an alias name to a true or canonical domain name.
+4. What is the role of the web server
+The role of the webserver is to accept requests made by the browser through HTTP, process the requests by responding with HTML content.
+5. What is the role of the application server
+The role of the application server is to act as a host (or container) for the user’s business logic while facilitating access to and performance of the business application.
+6. What is the role of the database
+The role of the database is to allow the management, creation, updating, and retrieval of records. The Database also gives structure to business information.
+7. What is the server using to communicate with the computer of the user requesting the website
+ This server communication is done using Hypertext Transfer Protocol (HTTP).
+
+     A.  Issues are with this infrastructure
+8.SPOF -Single Point of Failure
+is a part of the system that, if it fails the whole entire system stops from working.
+9.Downtime when maintenance needed (like deploying new code web server needs to be restarted)
+The downtime period might be longer than expected because the server is dependant on  one code base which at the moment is not available.The server requires to restart hence no way users will access the website in that period.
+10. Cannot scale if too much incoming traffic
+The domain name  directly accesses to and from the server ,and the infrastructure doesn't have a load balancer which handles increased loads easier.This posses an issue to the volume of users trying to access a website content and the system is overloaded.
